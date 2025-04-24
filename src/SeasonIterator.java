@@ -1,6 +1,7 @@
+import java.util.Iterator;
 import java.util.List;
 
-public class SeasonIterator implements EpisodeIterator {
+public class SeasonIterator implements EpisodeIterator, Iterator<Episode> {
     private List<Episode> episodes;
     private int position = 0;
 
